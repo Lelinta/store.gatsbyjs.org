@@ -3,7 +3,7 @@ import Client from 'shopify-buy';
 
 const client = Client.buildClient({
   domain: 'wonderiencevip.myshopify.com',
-  storefrontAccessToken: 5f655c786104d59a9a01489fc2884cd8
+  storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN
 });
 
 export const defaultStoreContext = {
